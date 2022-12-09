@@ -18,6 +18,7 @@ public class Main {
                 new MetadataSources(serviceRegistry)
                         .addAnnotatedClass(User.class) /*!!!!!!! register class*/
                         .addAnnotatedClass(Passport.class) /*!!!!!!! register class*/
+                        .addAnnotatedClass(Card.class) /*!!!!!!! register class*/
                         .getMetadataBuilder()
                         .build();
         SessionFactory sessionFactory = metadata.getSessionFactoryBuilder().build();
@@ -36,7 +37,7 @@ public class Main {
         System.out.println(user.getPassport());
 
         Passport passport = session.find(Passport.class, 1);
-        System.out.println(passport.getUser());
+        System.out.println(session.find(User.class, passport.getId()));
 
         session.close();
         sessionFactory.close();
