@@ -1037,71 +1037,108 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Host>localhost</Host>
       <Plugin>caching_sha2_password</Plugin>
     </user>
-    <table id="300" parent="291" name="passport">
+    <table id="300" parent="291" name="card">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="301" parent="291" name="user">
+    <table id="301" parent="291" name="passport">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <column id="302" parent="300" name="id">
-      <AutoIncrement>3</AutoIncrement>
+    <table id="302" parent="291" name="user">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <column id="303" parent="300" name="id">
+      <AutoIncrement>2</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="303" parent="300" name="number">
+    <column id="304" parent="300" name="number">
       <DataType>varchar(255)|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="304" parent="300" name="series">
-      <DataType>varchar(255)|0s</DataType>
+    <column id="305" parent="300" name="user_id">
+      <DataType>int|0s</DataType>
       <Position>3</Position>
     </column>
-    <index id="305" parent="300" name="PRIMARY">
+    <foreign-key id="306" parent="300" name="FKo6sft88rftk5mlw3yb9qqmr31">
+      <ColNames>user_id</ColNames>
+      <RefColNames>id</RefColNames>
+      <RefTableName>user</RefTableName>
+    </foreign-key>
+    <index id="307" parent="300" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="306" parent="300" name="PRIMARY">
+    <index id="308" parent="300" name="FKo6sft88rftk5mlw3yb9qqmr31">
+      <ColNames>user_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="309" parent="300" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="307" parent="301" name="id">
+    <column id="310" parent="301" name="id">
       <AutoIncrement>3</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="308" parent="301" name="name">
+    <column id="311" parent="301" name="number">
       <DataType>varchar(255)|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="309" parent="301" name="surname">
+    <column id="312" parent="301" name="series">
       <DataType>varchar(255)|0s</DataType>
       <Position>3</Position>
     </column>
-    <column id="310" parent="301" name="passport_id">
-      <DataType>int|0s</DataType>
-      <Position>4</Position>
-    </column>
-    <foreign-key id="311" parent="301" name="FKjpau0v33qbm8993j6fch575pk">
-      <ColNames>passport_id</ColNames>
-      <RefColNames>id</RefColNames>
-      <RefTableName>passport</RefTableName>
-    </foreign-key>
-    <index id="312" parent="301" name="PRIMARY">
+    <index id="313" parent="301" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="313" parent="301" name="FKjpau0v33qbm8993j6fch575pk">
+    <key id="314" parent="301" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="315" parent="302" name="id">
+      <AutoIncrement>3</AutoIncrement>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="316" parent="302" name="name">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="317" parent="302" name="surname">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="318" parent="302" name="passport_id">
+      <DataType>int|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <foreign-key id="319" parent="302" name="FKjpau0v33qbm8993j6fch575pk">
+      <ColNames>passport_id</ColNames>
+      <RefColNames>id</RefColNames>
+      <RefTableName>passport</RefTableName>
+    </foreign-key>
+    <index id="320" parent="302" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="321" parent="302" name="FKjpau0v33qbm8993j6fch575pk">
       <ColNames>passport_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="314" parent="301" name="PRIMARY">
+    <key id="322" parent="302" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>

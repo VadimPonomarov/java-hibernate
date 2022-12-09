@@ -39,6 +39,9 @@ public class Main {
         Passport passport = session.find(Passport.class, 1);
         System.out.println(session.find(User.class, passport.getId()));
 
+        Card card = new Card("1234 1234 1234 1234", user);
+        session.save(card);
+
         session.close();
         sessionFactory.close();
         /**/

@@ -14,7 +14,7 @@ public class Passport {
     private String number;
     private String series;
 
-    @OneToOne(cascade = CascadeType.ALL, mappedBy = "passport")
+    @OneToOne(cascade = CascadeType.ALL, mappedBy = "passport", fetch = FetchType.LAZY)
     private User user;
 
     public Passport(String number, String series) {
