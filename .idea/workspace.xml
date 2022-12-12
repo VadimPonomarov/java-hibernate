@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="949843bc-c576-427a-9c32-0b53fa4b4393" name="Changes" comment="oneToOne">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/df1b9687-ad17-4ae7-8f25-7b3072bf04c6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/df1b9687-ad17-4ae7-8f25-7b3072bf04c6.xml" afterDir="false" />
+    <list default="true" id="949843bc-c576-427a-9c32-0b53fa4b4393" name="Changes" comment="Lesson_2_HW">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Card.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Passport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Passport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Company.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/TruckOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Route.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Route.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Truck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Truck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Tag Library Descriptor" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -27,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="oneToOne" />
+        <entry key="$PROJECT_DIR$" value="ManyToOne" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -65,6 +68,14 @@
     ]
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="models" />
+      <recent name="" />
+      <recent name="TruckType" />
+      <recent name="Mark" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -75,6 +86,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -90,6 +102,8 @@
       <workItem from="1670452310441" duration="6103000" />
       <workItem from="1670503298373" duration="4505000" />
       <workItem from="1670596960903" duration="10679000" />
+      <workItem from="1670838656786" duration="17726000" />
+      <workItem from="1670862765464" duration="9551000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1670604954161</created>
@@ -112,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670605694876</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Lesson_2_HW">
+      <created>1670870260275</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670870260275</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,7 +158,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="oneToOne" />
-    <option name="LAST_COMMIT_MESSAGE" value="oneToOne" />
+    <MESSAGE value="Lesson_2_HW" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson_2_HW" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

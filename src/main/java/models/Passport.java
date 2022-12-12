@@ -1,3 +1,5 @@
+package models;
+
 import lombok.*;
 
 import javax.persistence.*;
@@ -14,11 +16,7 @@ public class Passport {
     private String number;
     private String series;
 
-    @OneToOne(cascade = CascadeType.ALL, mappedBy = "passport", fetch = FetchType.LAZY)
-    private User user;
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "passport")
+    private DriverProfile driverProfile;
 
-    public Passport(String number, String series) {
-        this.number = number;
-        this.series = series;
-    }
 }
